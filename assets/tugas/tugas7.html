@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Website wisata Indonesia sederhana dengan HTML Table dan CSS dasar"
+    />
+    <meta name="author" content="Adrian - Teknik Informatika" />
+    <title>Wisata Indonesia</title>
+
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f2f7ff;
+        margin: 0;
+        padding: 0;
+      }
+
+      table {
+        width: 80%;
+        margin: 30px auto;
+        border-collapse: collapse;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-color: #ffffff;
+      }
+
+      th {
+        background-color: #0066cc;
+        color: white;
+        padding: 20px;
+      }
+
+      td {
+        padding: 15px;
+        vertical-align: top;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+
+      tr:hover {
+        background-color: #eef6ff;
+      }
+
+      .navbar td {
+        background-color: #e6f0ff;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      .navbar a {
+        text-decoration: none;
+        color: #003366;
+        padding: 8px 15px;
+        display: inline-block;
+      }
+
+      .navbar a:hover {
+        background-color: #0066cc;
+        color: white;
+        border-radius: 4px;
+      }
+
+      .content img {
+        border-radius: 8px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+      }
+
+      footer {
+        background-color: #0066cc;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        font-size: 14px;
+        border-top: 4px solid #004c99;
+      }
+    </style>
+  </head>
+
+  <body>
+    <table border="0" cellspacing="0" cellpadding="0">
+      <thead>
+        <tr>
+          <th colspan="3">
+            <h1>Wisata Indonesia</h1>
+            <h3>Keindahan Alam dan Budaya Nusantara</h3>
+          </th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr class="navbar">
+          <td><a href="#">Beranda</a></td>
+          <td><a href="#">Destinasi</a></td>
+          <td><a href="#">Kontak</a></td>
+        </tr>
+
+        <tr class="content">
+          <td colspan="3" align="center">
+            <img src="./assets/borobudur.webp" width="500" alt="Candi Borobudur" />
+            <p><b>Candi Borobudur, Jawa Tengah</b></p>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="3">
+            <p>
+              Selamat datang di situs promosi wisata Indonesia! 🇮🇩<br />
+              Indonesia memiliki berbagai destinasi menakjubkan — dari keindahan alam, budaya,
+              hingga kuliner khas di tiap daerah.
+            </p>
+
+            <p>
+              Salah satu keajaiban dunia yang ada di Indonesia adalah <b>Candi Borobudur</b>.
+              Terletak di Magelang, Jawa Tengah, candi ini menjadi salah satu warisan budaya dunia
+              yang sangat terkenal.
+            </p>
+
+            <p>
+              Selain Borobudur, ada juga destinasi lain seperti <b>Bali</b>, <b>Raja Ampat</b>,
+              <b>Labuan Bajo</b>, dan <b>Danau Toba</b> yang tak kalah menawan. Mari jelajahi
+              pesonanya dan bangga menjadi bagian dari Indonesia!
+            </p>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="3">
+            <footer>&copy; 2025 Wisata Indonesia | Pemrograman Web 1 - Teknik Informatika</footer>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

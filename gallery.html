@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gallery — Elyas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="theme-dark">
+  <header class="nav" id="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">Elyas<span class="dot">.</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+		<a href="prestasi.html">Prestasi</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="themeToggle" aria-label="Toggle theme">🌙</button>
+        <button class="menu-toggle" id="menuToggle" aria-label="menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Gallery</h2>
+      <p class="muted">Koleksi proyek & desain — klik untuk lihat detail.</p>
+
+      <div class="gallery-grid">
+        <!-- Ubah src ke gambar kamu -->
+        <figure class="gallery-item" tabindex="0" data-title="BETSAFU App" data-desc="UI/UX & branding untuk trading app">
+          <img src="assets/images/gallery1.jpg" alt="BETSAFU App">
+          <figcaption>BenerinGung. Prototype App</figcaption>
+        </figure>
+
+        <figure class="gallery-item" tabindex="0" data-title="Kenapa Harus Kamu" data-desc="Cover & mockup buku 'Kenapa Harus Kamu'">
+          <img src="assets/images/gallery2.png" alt="Kenapa Harus Kamu">
+          <figcaption>BETSAFU trading apps</figcaption>
+        </figure>
+
+
+        <figure class="gallery-item" tabindex="0" data-title="Photo Print Business" data-desc="Branding & promo assets">
+          <img src="assets/images/gallery4.jpg" alt="Photo Print Business">
+          <figcaption>Photo Print Business</figcaption>
+        </figure>
+
+        <!-- Tambah lagi sesuai kebutuhan -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal sederhana untuk melihat detail -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-body">
+      <button id="modalClose" class="modal-close" aria-label="Close">✕</button>
+      <img id="modalImg" src="" alt="">
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>© <span id="year4"></span> Elyas Anggara Pangestu</div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

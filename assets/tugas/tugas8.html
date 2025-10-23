@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .input {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div align="center">
+      <h1 style="color: purple">Free Registration</h1>
+
+      <form>
+        <table>
+          <tr>
+            <td><label for="nama">Nama</label></td>
+            <td class="input">: <input type="text" name="nama" /></td>
+          </tr>
+          <tr>
+            <td><label for="tgl_lahir">Tanggal Lahir</label></td>
+            <td class="input">
+              : <input size="2" type="text" name="tgl_lahir" id="" /> /
+              <input size="2" type="text" name="tgl_lahir" id="" /> /
+              <input size="2" type="text" name="tgl_lahir" id="" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="alamat">Alamat</label></td>
+            <td class="input">: <textarea name="alamat" rows="4" cols="30"></textarea></td>
+          </tr>
+          <tr>
+            <td><label for="kota">Kota</label></td>
+            <td class="input">: <input type="text" name="kota" /></td>
+          </tr>
+          <tr>
+            <td><label for="pekerjaan">Pekerjaan</label></td>
+            <td class="input">
+              :
+              <select name="pekerjaan" id="pekerjaan">
+                <option value="pelajar">Pelajar</option>
+                <option value="mahasiswa">Mahasiswa</option>
+                <option value="karyawan">Karyawan</option>
+                <option value="wiraswasta">Wiraswasta</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="jenis_kelamin">Jenis Kelamin</label></td>
+            <td class="input">
+              : <input type="radio" name="jenis_kelamin" value="laki-laki" /> Laki-laki
+              <input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan
+            </td>
+          </tr>
+          <tr>
+            <td><label for="hobi">Hobi</label></td>
+            <td class="input">
+              :
+              <div>
+                <input type="checkbox" name="hobi" value="membaca" /> Membaca <br />
+                <input type="checkbox" name="hobi" value="menulis" /> Menulis <br />
+                <input type="checkbox" name="hobi" value="bermain" /> Bermain <br />
+              </div>
+            </td>
+          </tr>
+        </table>
+
+        <br />
+
+        <input type="submit" value="Kirim" />
+        <input type="reset" value="Cancel" />
+      </form>
+    </div>
+  </body>
+</html>
